@@ -1,3 +1,5 @@
+@import "variaveis.less";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: @CorPrincipal;
 }
 
 li {
@@ -20,7 +22,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: @corDoHeader;
     position: sticky;
     top: 0;
     left: 0;
@@ -43,7 +45,7 @@ header .container {
 }
 
 .menu li a {
-    color: #fff;
+    color: @CorDoFundo;
     text-decoration: none;
 }
 
@@ -67,8 +69,8 @@ section {
 
 .product-button {
     display: block;
-    background-color: #44bd32;
-    color: #fff;
+    background-color: @CorDoButton;
+    color: @CorDoFundo;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
@@ -77,7 +79,7 @@ section {
 }
 
 .product-button:hover {
-    background-color: #4cd137;
+    background-color: @CorDoButton;
 }
 
 @media screen and (max-width: 1023px) {
