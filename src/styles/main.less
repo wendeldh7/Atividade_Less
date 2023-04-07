@@ -1,4 +1,5 @@
 @import "variaveis.less";
+@import "mapas.less";
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-    background-color: @CorPrincipal;
+    background-color: #colors[principalColor];
 }
 
 li {
@@ -22,7 +23,7 @@ li {
 }
 
 header {
-    background-color: @corDoHeader;
+    background-color: #colors[headerColor];
     position: sticky;
     top: 0;
     left: 0;
@@ -45,7 +46,7 @@ header .container {
 }
 
 .menu li a {
-    color: @CorDoFundo;
+    color: #colors[FundoColor];
     text-decoration: none;
 }
 
@@ -69,8 +70,8 @@ section {
 
 .product-button {
     display: block;
-    background-color: @CorDoButton;
-    color: @CorDoFundo;
+    background-color: #colors[buttonColor];
+    color: #colors[FundoColor];
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
@@ -78,8 +79,15 @@ section {
     text-decoration: none;
 }
 
+.social-links {
+    li {
+        list-style: none;
+        justify-content: space-between;
+    }
+}
+
 .product-button:hover {
-    background-color: @CorDoButton;
+    background-color: #colors[buttonColor];
 }
 
 @media screen and (max-width: 1023px) {
